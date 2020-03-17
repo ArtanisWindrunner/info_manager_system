@@ -29,7 +29,7 @@ class StudentManagerView:
         elif item == "4":
             self.__modify_student()
         elif item == "5":
-            self.__outout_student_by_score()
+            self.__output_student_by_score()
 
     def main(self):
         while True:
@@ -84,6 +84,6 @@ class StudentManagerView:
         else:
             print("修改失败")
 
-    def __outout_student_by_score(self):
+    def __output_student_by_score(self):
         self.__manager.order_by_score()
         self.__output_students()
